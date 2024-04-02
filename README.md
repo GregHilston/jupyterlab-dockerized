@@ -6,11 +6,13 @@ A full blogpost is written on this repo on my personal site [here](http://greghi
 
 This repository provides an easy way to Dockerize a Jupyter Lab project. Annotate your dependencies in the `requirements.txt`, and then run `$ docker compose up`. The output of that command will emit a URL, with a token, which you can use to access the Jupyter Lab instance in your web browser. For example, it might look like:
 
-> jupyterlab-1  |     To access the server, open this file in a browser:
-> jupyterlab-1  |         file:///home/jovyan/.local/share/jupyter/runtime/jpserver-7-open.html
-> jupyterlab-1  |     Or copy and paste one of these URLs:
-> jupyterlab-1  |         http://c6bcfb18cb93:8888/lab?token=somefaketoken
-> jupyterlab-1  |         http://127.0.0.1:8888/lab?token=somefaketoken
+```
+jupyterlab-1  |     To access the server, open this file in a browser:
+jupyterlab-1  |         file:///home/jovyan/.local/share/jupyter/runtime/jpserver-7-open.html
+jupyterlab-1  |     Or copy and paste one of these URLs:
+jupyterlab-1  |         http://c6bcfb18cb93:8888/lab?token=somefaketoken
+jupyterlab-1  |         http://127.0.0.1:8888/lab?token=somefaketoken
+```
 
 Then you'd navigate to `http://127.0.0.1:8888/lab?token=somefaketoken` or `localhost:8888/lab?token=somefaketoken` in your web browser.
 
